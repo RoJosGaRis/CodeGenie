@@ -1,13 +1,12 @@
 "use client";
 
-import { useSession, signIn, signOut } from "next-auth/react";
-import LoginButton from "./LoginButton";
+import React from "react";
+import { useRouter } from "next/navigation";
 
-export default function App() {
-  const { data: session, status } = useSession();
+const App = () => {
+  const router = useRouter();
+  router.push("/login");
+  return <></>;
+};
 
-  if (session) {
-    return <p>Hola {session.user.name}, bienvenido de vuelta</p>;
-  }
-  return <LoginButton signIn={signIn} />;
-}
+export default App;

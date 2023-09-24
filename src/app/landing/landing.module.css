@@ -1,0 +1,52 @@
+.navBarContainer {
+  background-color: rgba(00, 50, 50, 1);
+  height: 4.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.navLink {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+.navLink:focus {
+  color: black;
+  text-decoration: underline;
+}
+
+.logo {
+  height: 8em;
+  width: 8em;
+  left: 0;
+  margin-right: auto;
+  /* background-image: url(./logo.png);
+  z-index: 1000; */
+}
+
+.dataListContainer {
+  background-color: rgba(00, 50, 50, 1);
+  border-radius: 25px;
+  padding: 20px;
+  margin: 10px;
+  min-width: 250px;
+  width: fit-content;
+}
+
+.dataListContainer h1 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dataLists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
