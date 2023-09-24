@@ -28,8 +28,12 @@ const IndexPage = ({ userId }) => {
   const fetchLibraries = ({ id }) => {
     fetch(`/api/libraries/${id}`)
       .then((res) => res.json())
-      .then((data) => {
-        setInformation({ ...information, libraries: data });
+      .then((d) => {
+        if (d.res) {
+          console.log(d);
+        } else {
+          console.log("error");
+        }
       });
   };
 

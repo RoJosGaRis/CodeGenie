@@ -24,12 +24,12 @@ export default function App() {
       body: JSON.stringify(newUser),
     };
 
-    fetch("http://localhost:4000/users/create", requestOptions)
+    fetch("http://localhost:8000/create", requestOptions)
       .then((res) => res.json())
       .then(
         (result) => {
           console.log(result);
-          router.push("/landing");
+          router.push("/landing/references");
         },
         (error) => {
           console.error(error);
