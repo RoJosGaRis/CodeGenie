@@ -1,0 +1,11 @@
+.profileContainer h2 {
+  font-size: 2em;
+  color: gold;
+}
+
+.profileContainer {
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  height: 100vh;
+}
