@@ -5,6 +5,13 @@
   justify-content: center;
 }
 
+.topBar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -12,7 +19,31 @@
   padding: 20px;
 }
 
+.inputForm {
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+}
+
+.button_login  {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: black;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
 .formContainer {
   background-color: gray;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+  box-shadow: 0 0px 35px rgba(159, 159, 159, 0.8);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+
+.formContainer h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
 }
